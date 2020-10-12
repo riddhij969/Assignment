@@ -13,6 +13,7 @@ def get_data():
     headers = {'Authorization': f'Token{get_token()}'}
     response = requests.get(url, headers = headers)
     prod_data = response.json()
-    print(prod_data)
+    for i in prod_data:
+        print(i)
 
 get_data()
