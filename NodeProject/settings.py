@@ -30,7 +30,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+LOCAL_APPS=[
+    'Assignment.common',
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -64,6 +66,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',

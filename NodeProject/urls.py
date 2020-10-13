@@ -17,8 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 from NodeApp.api import ProductList, ProductDetail, UserAuthentication
+# from NodeApp.api import HomePage
 
 urlpatterns = [
+    # path('', HomePage, name= 'Home Page'),
+    path('', ProductList.as_view(), name= 'Home Page'),
     path('admin/', admin.site.urls),
     url(r'^api/products_list/$', ProductList.as_view(), name= 'product_list'),
     url(r'^api/products_list/(?P<Model_No>\d+)/$',ProductDetail.as_view(), name= 'product_list'),
