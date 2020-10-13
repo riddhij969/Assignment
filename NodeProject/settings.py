@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
-# django_heroku.settings(locals())
+#import django_heroku
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -80,9 +80,17 @@ WSGI_APPLICATION = 'NodeProject.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
+    #  'default': {
+    #      'ENGINE': 'django.db.backends.sqlite3',
+    #      'NAME': BASE_DIR / 'db.sqlite3',
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'products',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
@@ -124,7 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
+#
 # REST_FRAMEWORK = {
 #     'DEFAULT_PERMISSION_CLASSES' : [
 #         'rest_framework.permissions.IsAuthenticated',
@@ -135,3 +143,4 @@ STATIC_URL = '/static/'
 #         'rest_framework.authentication.TokenAuthentication',
 #     )
 # }
+#django_heroku.settings(locals())
