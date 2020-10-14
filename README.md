@@ -16,21 +16,21 @@
 
 # Prerequisites:
 
-    Python3 (with pip)
-    Django
-    Django REST Framework
-    Pycharm
+    . Python3 (with pip)
+    . Django
+    . Django REST Framework
+    . Pycharm
   
   
 # INSTALLATION
 
-    pip install django
-    pip install djangorestframework
-    pip install mysqlclient
-    pip install oauth2
-    pip install requests
-    pip install django-heroku
-    pip install gunicorn
+    . pip install django
+    . pip install djangorestframework
+    . pip install mysqlclient
+    . pip install oauth2
+    . pip install requests
+    . pip install django-heroku
+    . pip install gunicorn
   
 # Configure MySQL Database
   
@@ -47,14 +47,14 @@
 
 # Running/ Development
   
-    python manage.py makemigrations
-    python manage.py migrate
-    python manage.py runserver
-    visit your API at http://127.0.0.1:8000/
-    For admin - http://127.0.0.1:8000/admin/
-    My user name - Riddhi
-    My user password - Rj@123456
-    For API View - http://127.0.0.1:8000/api/products_list/
+    . python manage.py makemigrations
+    . python manage.py migrate
+    . python manage.py runserver
+    . visit your API at http://127.0.0.1:8000/
+    . For admin - http://127.0.0.1:8000/admin/
+    . My user name - Riddhi
+    . My user password - Rj@123456
+    . For API View - http://127.0.0.1:8000/api/products_list/
   
 # Deploying
   
