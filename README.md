@@ -1,7 +1,9 @@
 # Django Rest Framework API
 
 # Description
-    This API uses GET/POST/PUT/DELETE request to communicate and HTTP response codes to indenticate status and errors. All responses come in standard JSON. All requests must         include a content-type of application/json and the body must be valid JSON. This API consists products of Mobile and Laptop.
+    This API uses GET/POST/PUT/DELETE request to communicate and HTTP response codes to indenticate status and errors. 
+    All responses come in standard JSON. All requests must include a content-type of application/json and the body must be valid JSON.
+    This API consists products of Mobile and Laptop.
     By default Django REST Framework will produce a response like:
 
     {
