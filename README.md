@@ -75,6 +75,5 @@
     GET | POST | DELETE | PUT    
   
     The get() method sends a GET request to the specified url.
-    ![Get ](https://user-images.githubusercontent.com/69605346/96024279-25035200-0e71-11eb-9eae-c5429d72baf7.png)
+ ![Get ](https://user-images.githubusercontent.com/69605346/96024279-25035200-0e71-11eb-9eae-c5429d72baf7.png)
 
- 
