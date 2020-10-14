@@ -45,8 +45,6 @@
           'HOST': 'localhost',
           'PORT': '3306',
       }
-![Database](https://user-images.githubusercontent.com/69605346/96032084-d1e2cc80-0e7b-11eb-936e-da5b833a1def.png)
-
 
 # Running/ Development
   
@@ -94,3 +92,6 @@
     The delete() method is used to delete existing resources.
   ![Delete](https://user-images.githubusercontent.com/69605346/96030508-b5459500-0e79-11eb-8b7a-c6b4dfa5231f.png)
   
+# Result
+
+  ![Database](https://user-images.githubusercontent.com/69605346/96032084-d1e2cc80-0e7b-11eb-936e-da5b833a1def.png)
