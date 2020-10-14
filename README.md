@@ -18,13 +18,12 @@
 
 # Prerequisites:
 
-    . Python3 (with pip)
-    . Django
-    . Django REST Framework
+    . Python3
     . Pycharm
+    . Django
+    . Django REST Framework  
   
-  
-# INSTALLATION
+# Installation
 
     . pip install django
     . pip install djangorestframework
@@ -46,6 +45,8 @@
           'HOST': 'localhost',
           'PORT': '3306',
       }
+![Database](https://user-images.githubusercontent.com/69605346/96032084-d1e2cc80-0e7b-11eb-936e-da5b833a1def.png)
+
 
 # Running/ Development
   
