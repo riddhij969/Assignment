@@ -4,7 +4,6 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import *
-# from tests.keys import *
 from django.http import HttpResponse
 import oauth2
 from django.template import loader
@@ -16,17 +15,6 @@ class ProductList(APIView):
         model = Products.objects.all()
         serializer = ProductsSerializer(model,many=True)
         return Response(serializer.data)
-# def HomePage(request, *args ,**kwargs):
-#     template_name = 'common/home1.html'
-#     res = '''<h1>Welcome to our Home Page</h1>
-#     <h2>Admin - <a href = 'http://127.0.0.1:8000/admin/'>http://127.0.0.1:8000/admin/</a></h2>
-#     <h2>Api Products List - <a href = 'http://127.0.0.1:8000/api/products_list/'>http://127.0.0.1:8000/api/products_list/</a></h2>'''
-#
-#     return HttpResponse(res)
-
-# def home(request, *args, **kwargs):
-#     template = loader.get_template("/Assignment/home1.html")
-#     return HttpResponse(template)
 
 class UserAuthentication(ObtainAuthToken):
     def post(self, request, *args, **kwargs):
